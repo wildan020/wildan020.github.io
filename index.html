@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <style>
+    /* FOOTER AWAL */
+    footer {
+      background-color: #dea7a8;
+      padding-top: 65px;
+    }
+    /* FOOTER AKHIR */
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/20035135-30f5-e011-93df-030f18e28268">SD 5 Palangkaraya</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.php">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Lainnya</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="visi.html">Visi & Misi</a></li>
+                <li><a class="dropdown-item" href="guru.php">Guru</a></li>
+                <li><a class="dropdown-item" href="siswa.php">Siswa</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Login</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.php">Login</a></li>
+                <li><a class="dropdown-item" href="<?php echo $base_url.'system/logout.php'; ?>">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- colarasel awal -->
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/1.jpg" alt="Los Angeles" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>Indonesia</h3>
+            <p>Kita punya waktu yang banyak di sekolah</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/2.jpg" alt="Chicago" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>SD 5 Palangkaraya</h3>
+            <p>Thank you, SD 5 Palangkaraya!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/3.jpg" alt="New York" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>Palangkaraya</h3>
+            <p>We love Palangkaraya!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <!-- colarasel akhir -->
+    <!-- FOOTER -->
+    <footer id="Footer" class="text-center text-white pb-5">
+      <div class="foot"></div>
+      <div class="footer">
+        <p>Copyright -@2023-SD5 Palangka Raya</p>
+      </div>
+    </footer>
+     <!-- FOOTER -->
+  </body>
+</html>
